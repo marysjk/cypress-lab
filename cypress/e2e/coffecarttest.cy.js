@@ -1,11 +1,11 @@
-//Automation for coffe cart ordering app 
+//Automation for coffee cart ordering app 
 //https://coffee-cart.app/
 
 
 it('Access app', () => {
     cy.visit('https://coffee-cart.app/')
 
-    //Adding all types of coffe
+    //Adding all types of coffee
     cy.get('[data-cy="Espresso"]').click()
     cy.get('[data-cy="Espresso-Macchiato"]').click()
     cy.get('[data-cy="Cappuccino"]').click()
